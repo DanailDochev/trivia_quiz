@@ -2,6 +2,9 @@ import openai
 import gradio as gr
 import re
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 openai_api_key = os.environ.get("OPENAI_API_KEY")
 client = openai.OpenAI(api_key=openai_api_key)
